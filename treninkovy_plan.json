@@ -1,0 +1,937 @@
+{
+  "nazev": "TRÉNINKOVÝ DENÍK: PŘÍPRAVA - UDRŽENÍ KONDICE",
+  "podtitul": "10denní plán pro fotbalistu (krajský přebor, 25 let)",
+  "celkem_dni": 10,
+  "dny": [
+    {
+      "den": 1,
+      "nazev": "LEHKÝ BĚH + MOBILITA + CORE",
+      "zamerereni": "Rozhýbání těla, aktivace svalů a příprava na následující tréninkové dny. Zaměření na základní vytrvalost a stabilitu středu těla.",
+      "popis_treninku": {
+        "rozcviceni": {
+          "cas": "10 min",
+          "popis": "Dynamická mobilita všech kloubů, pohybové vzory (výpady s rotací, kroužení pažemi, koleny). Aktivace core (plank 2x20s)."
+        },
+        "hlavni_cast": {
+          "cas": "30 min",
+          "popis": "Lehký aerobní běh v nízkém tempu 65-70% TFmax. Zaměření na dechovou koordinaci a rovnoměrné tempo. Povrch: asfalt nebo běžecká dráha."
+        },
+        "core": {
+          "cas": "15 min",
+          "cviky": [
+            {
+              "nazev": "Plank",
+              "parametry": "3x 45-60s",
+              "technika": "Tělo v přímé linii, napnuté břicho, lopatky stažené"
+            },
+            {
+              "nazev": "Dead Bug",
+              "parametry": "3x 12 opakování",
+              "technika": "Pomalý pohyb, záda přitlačená k zemi, aktivní core"
+            },
+            {
+              "nazev": "Bird Dog",
+              "parametry": "3x 10 na každou stranu",
+              "technika": "Stabilní pánev, protažení těla, kontrolovaný pohyb"
+            },
+            {
+              "nazev": "Side Plank",
+              "parametry": "2x 30-40s na stranu",
+              "technika": "Tělo v přímce, napnuté boky"
+            }
+          ]
+        },
+        "protazeni": {
+          "cas": "10 min",
+          "popis": "Statický strečink všech hlavních svalových skupin (hamstringy, quadriceps, lýtka, hip flexors, záda). Držení každé pozice 30-45s."
+        }
+      },
+      "metriky": {
+        "tepova_frekvence": {
+          "nazev": "Tepová frekvence (průměr / max.)",
+          "jednotka": "bpm",
+          "poznamka": "Cílové pásmo: 120-140 / max 150"
+        },
+        "rpe": {
+          "nazev": "RPE (náročnost)",
+          "skala": "1-10",
+          "cilova_hodnota": "3-4"
+        },
+        "hmotnost": {
+          "nazev": "Hmotnost",
+          "jednotka": "kg"
+        },
+        "spanek": {
+          "nazev": "Spánek",
+          "jednotka": "h",
+          "doporuceno": "7-9h"
+        },
+        "pitny_rezim": {
+          "nazev": "Pitný režim (celkem za den)",
+          "jednotka": "l",
+          "doporuceno": "2.5-3l"
+        },
+        "nalada": {
+          "nazev": "Nálada",
+          "skala": "1-5",
+          "popis": "1 = špatná, 5 = skvělá"
+        }
+      },
+      "splnene_ukoly": [
+        "Rozcvičení",
+        "Hlavní Část",
+        "Core",
+        "Protažení"
+      ],
+      "tip_na_dnes": "Nezačínej sezónu moc agresivně. Dej tělu čas adaptovat se na zátěž. První den je jen o rozhýbání!",
+      "poznamky_prostor": true,
+      "hodnoceni_dne": {
+        "skala": "1-10"
+      }
+    },
+    {
+      "den": 2,
+      "nazev": "SILOVÝ TRÉNINK S VLASTNÍ VAHOU",
+      "zamerereni": "Posílení celého těla, zlepšení síly, stability a koordinace. Důraz na techniku provedení a zapojení stabilizačních svalů.",
+      "popis_treninku": {
+        "rozcviceni": {
+          "cas": "12 min",
+          "popis": "Kloubní mobilita, aktivace gluteálních svalů (clamshells, glute bridge), dynamické protažení dolních končetin, 5 min lehkého klusu."
+        },
+        "hlavni_cast": {
+          "cas": "35 min",
+          "struktura": "3-4 kola s 2 min odpočinkem mezi koly",
+          "cviky": [
+            {
+              "nazev": "Dřepy (Squats)",
+              "parametry": "15-20x",
+              "technika": "Kolena ve směru špiček, trup vzpřímený, hloubka pod 90°"
+            },
+            {
+              "nazev": "Bulharské dřepy (Bulgarian Split Squats)",
+              "parametry": "12x na každou nohu",
+              "technika": "Koleno přední nohy za špičkou, vertikální pohyb"
+            },
+            {
+              "nazev": "Hip Thrust",
+              "parametry": "15-20x",
+              "technika": "Maximální kontrakce gluteálních svalů nahoře, 1s výdrž"
+            },
+            {
+              "nazev": "Nordické klihanky (Nordic Hamstring Curls)",
+              "parametry": "3-5x (asistované)",
+              "technika": "Kontrolované snižování, výbušné vytlačení zpět"
+            },
+            {
+              "nazev": "Plank s dotyky ramen",
+              "parametry": "45-60s",
+              "technika": "Minimální rotace trupu, stabilní pánev"
+            },
+            {
+              "nazev": "Kliky (Push-ups)",
+              "parametry": "12-15x",
+              "technika": "Tělo v přímce, lopatky stažené, plný rozsah"
+            }
+          ]
+        },
+        "core_doplnek": {
+          "cas": "10 min",
+          "cviky": [
+            {
+              "nazev": "Mountain Climbers",
+              "parametry": "3x 30s",
+              "technika": "Rychlý střídavý pohyb, aktivní core"
+            },
+            {
+              "nazev": "Russian Twists",
+              "parametry": "3x 20 rotací celkem",
+              "technika": "Kontrolovaný pohyb, zapojení šikmých břišních svalů"
+            },
+            {
+              "nazev": "Leg Raises",
+              "parametry": "3x 12-15x",
+              "technika": "Záda přitlačená, pomalé spouštění"
+            }
+          ]
+        },
+        "protazeni": {
+          "cas": "8 min",
+          "popis": "Důkladné protažení dolních končetin a core. Foam rolling (pokud dostupný) na quadriceps a IT band."
+        }
+      },
+      "metriky": {
+        "tepova_frekvence": {
+          "nazev": "Tepová frekvence (průměr / max.)",
+          "jednotka": "bpm",
+          "poznamka": "Cílové pásmo: 110-130 / max 150"
+        },
+        "rpe": {
+          "nazev": "RPE (náročnost)",
+          "skala": "1-10",
+          "cilova_hodnota": "6-7"
+        },
+        "hmotnost": {
+          "nazev": "Hmotnost",
+          "jednotka": "kg"
+        },
+        "spanek": {
+          "nazev": "Spánek",
+          "jednotka": "h",
+          "doporuceno": "7-9h"
+        },
+        "pitny_rezim": {
+          "nazev": "Pitný režim (celkem za den)",
+          "jednotka": "l",
+          "doporuceno": "2.5-3l"
+        },
+        "nalada": {
+          "nazev": "Nálada",
+          "skala": "1-5",
+          "popis": "1 = špatná, 5 = skvělá"
+        }
+      },
+      "splnene_ukoly": [
+        "Rozcvičení",
+        "Hlavní Část",
+        "Core",
+        "Protažení"
+      ],
+      "tip_na_dnes": "Nezapomínej kromě výkonu i na techniku! Kvalita provedení je důležitější než počet opakování. Silové základy tě ochrání před zraněními.",
+      "poznamky_prostor": true,
+      "hodnoceni_dne": {
+        "skala": "1-10"
+      }
+    },
+    {
+      "den": 3,
+      "nazev": "INTERVALY - RYCHLOST A VYTRVALOST",
+      "zamerereni": "Krátké intenzivní úseky pro zlepšení rychlosti, anaerobní kapacity, laktátového prahu a celkové fotbalové kondice.",
+      "popis_treninku": {
+        "rozcviceni": {
+          "cas": "15 min",
+          "popis": "10 min lehkého klusu, dynamická mobilita (high knees, butt kicks, leg swings), 4-5 progresivních zrychlení 50-80m (80-90% max)."
+        },
+        "hlavni_cast": {
+          "cas": "25 min",
+          "struktura": "Intervalový běh",
+          "cviky": [
+            {
+              "nazev": "Sprint intervaly",
+              "parametry": "10 x 200m",
+              "tempo": "80-95% maximální rychlosti",
+              "odpocinok": "90s aktivní odpočinek (chůze/klus)",
+              "poznamka": "Zaměření na udržení konstantní rychlosti během všech intervalů"
+            }
+          ],
+          "alternativa": "Pokud není běžecká dráha: 10 x 60s rychlý běh / 90s klus"
+        },
+        "vyklusani": {
+          "cas": "10 min",
+          "popis": "Velmi lehký klus 60-65% TFmax pro odstranění laktátu a zklidnění organismu."
+        },
+        "protazeni": {
+          "cas": "10 min",
+          "popis": "Dynamické a statické protažení dolních končetin. Důraz na lýtka, hamstringy, hip flexors a quadriceps."
+        }
+      },
+      "metriky": {
+        "tepova_frekvence": {
+          "nazev": "Tepová frekvence (průměr / max.)",
+          "jednotka": "bpm",
+          "poznamka": "Intervaly: 170-185 / Odpočinek: pod 130"
+        },
+        "rpe": {
+          "nazev": "RPE (náročnost)",
+          "skala": "1-10",
+          "cilova_hodnota": "8-9"
+        },
+        "hmotnost": {
+          "nazev": "Hmotnost",
+          "jednotka": "kg"
+        },
+        "spanek": {
+          "nazev": "Spánek",
+          "jednotka": "h",
+          "doporuceno": "8-9h (důležité pro regeneraci po intenzivní zátěži)"
+        },
+        "pitny_rezim": {
+          "nazev": "Pitný režim (celkem za den)",
+          "jednotka": "l",
+          "doporuceno": "3-3.5l"
+        },
+        "nalada": {
+          "nazev": "Nálada",
+          "skala": "1-5",
+          "popis": "1 = špatná, 5 = skvělá"
+        }
+      },
+      "splnene_ukoly": [
+        "Rozcvičení",
+        "Hlavní Část",
+        "Vyklusání",
+        "Protažení"
+      ],
+      "tip_na_dnes": "Intervaly jsou tvrdé, ale právě ony zlepší tvou výbušnost v zápase. Nenech se odradit - mentální síla je stejně důležitá jako fyzická!",
+      "poznamky_prostor": true,
+      "hodnoceni_dne": {
+        "skala": "1-10"
+      }
+    },
+    {
+      "den": 4,
+      "nazev": "AKTIVNÍ REGENERACE",
+      "zamerereni": "Odpočinek pro tělo i mysl, podpora regenerace, zlepšení cirkulace krve a snížení svalového napětí po intenzivních trénincích.",
+      "popis_treninku": {
+        "aktivni_pohyb": {
+          "cas": "30-40 min",
+          "popis": "Nízko-intenzitní aktivita dle výběru: plavání (ideální pro regeneraci kloubů), jízda na kole (lehký povrch), nordic walking. Intenzita 50-60% TFmax.",
+          "poznamka": "Důraz na příjemný pohyb bez zatěžování kloubů a svalů"
+        },
+        "mobilita_a_protazeni": {
+          "cas": "20 min",
+          "popis": "Jóga flow pro sportovce nebo mobilizační rutina. Zaměření na: kyčle (pigeon pose), hamstringy (forward fold), thorakální páteř (rotace), ramena.",
+          "cviky": [
+            "Cat-Cow - 10 opakování",
+            "Child's Pose - 2 min",
+            "Hip Flexor Stretch - 90s každá strana",
+            "Glute Stretch - 90s každá strana",
+            "Shoulder Mobility - kruhy, protažení"
+          ]
+        },
+        "relaxace": {
+          "cas": "10-15 min",
+          "popis": "Dechová cvičení: 4-7-8 technika (vdech 4s, výdrž 7s, výdech 8s) - 5-10 cyklů. Pokud dostupné: sauna nebo studená koupel (kontrast terapie).",
+          "poznamka": "Zaměř se na zklidnění nervového systému"
+        }
+      },
+      "metriky": {
+        "tepova_frekvence": {
+          "nazev": "Tepová frekvence (průměr / max.)",
+          "jednotka": "bpm",
+          "poznamka": "Měla by zůstat nízká: 90-120 bpm"
+        },
+        "rpe": {
+          "nazev": "RPE (náročnost)",
+          "skala": "1-10",
+          "cilova_hodnota": "2-3"
+        },
+        "hmotnost": {
+          "nazev": "Hmotnost",
+          "jednotka": "kg"
+        },
+        "spanek": {
+          "nazev": "Spánek",
+          "jednotka": "h",
+          "doporuceno": "8-9h"
+        },
+        "pitny_rezim": {
+          "nazev": "Pitný režim (celkem za den)",
+          "jednotka": "l",
+          "doporuceno": "2.5-3l"
+        },
+        "nalada": {
+          "nazev": "Nálada",
+          "skala": "1-5",
+          "popis": "1 = špatná, 5 = skvělá"
+        }
+      },
+      "splnene_ukoly": [
+        "Aktivní Pohyb",
+        "Mobilita",
+        "Relaxace",
+        "Regenerace"
+      ],
+      "tip_na_dnes": "Regenerace není slabost, je to část tréninku! Právě v odpočinku se tvé tělo adaptuje a stává se silnějším. Dopřej si ji naplno.",
+      "poznamky_prostor": true,
+      "hodnoceni_dne": {
+        "skala": "1-10"
+      }
+    },
+    {
+      "den": 5,
+      "nazev": "FOTBALOVÁ OBRATNOST + SPRINTY",
+      "zamerereni": "Zlepšení výbušnosti, obratnosti, změny směru, reakce a technických dovedností s míčem. Simulace herních situací.",
+      "popis_treninku": {
+        "rozcviceni": {
+          "cas": "12 min",
+          "popis": "Běžecká abeceda (skipink, běh přes překážky, bouncing), dynamická mobilita, progresivní sprinty 3x40m s postupným zvyšováním intenzity."
+        },
+        "technicka_cast_s_micem": {
+          "cas": "20 min",
+          "cviky": [
+            {
+              "nazev": "Dribling v omezeném prostoru",
+              "parametry": "4x 2 min",
+              "popis": "Různé techniky (vnitřní/vnější strana, podešev), změny směru, tempo vysoké",
+              "odpocinok": "60s mezi sériemi"
+            },
+            {
+              "nazev": "Přihrávky + Sprint",
+              "parametry": "3 série x 10 opakování",
+              "popis": "Krátká přihrávka (zeď/spoluhráč), sprint 15m, převzetí míče, opakování. Zaměření na první dotek.",
+              "poznamka": "Pokud sám: přihrávka na zeď, sprint, kontrola míče"
+            },
+            {
+              "nazev": "Slalom dribling",
+              "parametry": "6 průběhů",
+              "popis": "8-10 kuželů vzdálených 2m, maximální rychlost s udržením kontroly míče"
+            }
+          ]
+        },
+        "obratnost_a_rychlost": {
+          "cas": "20 min",
+          "cviky": [
+            {
+              "nazev": "Ladder drills (žebřík obratnosti)",
+              "parametry": "5 různých vzorů x 3 průběhy",
+              "popis": "In-out, lateral shuffle, ickey shuffle, single leg hops",
+              "poznamka": "Pokud nemáš žebřík, použij značky na zemi"
+            },
+            {
+              "nazev": "Cone drills - T-drill",
+              "parametry": "6 opakování",
+              "popis": "Změny směru ve tvaru T, maximální rychlost a exploze"
+            },
+            {
+              "nazev": "Sprinty 20m s reakčním startem",
+              "parametry": "8 x 20m",
+              "popis": "Start na různé podněty (vizuální, zvukový), maximální akcelerace",
+              "odpocinok": "60-90s mezi sprinty"
+            }
+          ]
+        },
+        "strelba": {
+          "cas": "10 min",
+          "popis": "Série střel z různých pozic a vzdáleností. Zaměření na techniku (náběh, postavení těla, doleték). 15-20 střel celkem."
+        },
+        "vyklusani_a_protazeni": {
+          "cas": "8 min",
+          "popis": "Lehké vyklusání, protažení dolních končetin a mobilita kyčlí."
+        }
+      },
+      "metriky": {
+        "tepova_frekvence": {
+          "nazev": "Tepová frekvence (průměr / max.)",
+          "jednotka": "bpm",
+          "poznamka": "Střídavá: 140-160 průměr / 180+ při sprintech"
+        },
+        "rpe": {
+          "nazev": "RPE (náročnost)",
+          "skala": "1-10",
+          "cilova_hodnota": "7-8"
+        },
+        "hmotnost": {
+          "nazev": "Hmotnost",
+          "jednotka": "kg"
+        },
+        "spanek": {
+          "nazev": "Spánek",
+          "jednotka": "h",
+          "doporuceno": "7-9h"
+        },
+        "pitny_rezim": {
+          "nazev": "Pitný režim (celkem za den)",
+          "jednotka": "l",
+          "doporuceno": "3-3.5l"
+        },
+        "nalada": {
+          "nazev": "Nálada",
+          "skala": "1-5",
+          "popis": "1 = špatná, 5 = skvělá"
+        }
+      },
+      "splnene_ukoly": [
+        "Rozcvičení",
+        "Technika s Míčem",
+        "Obratnost",
+        "Sprinty",
+        "Protažení"
+      ],
+      "tip_na_dnes": "Obratnost a první krok často rozhoduje zápasy. Trénuj změny směru tak, jako bys unikal protihráči. Každý sprint je jako herní situace!",
+      "poznamky_prostor": true,
+      "hodnoceni_dne": {
+        "skala": "1-10"
+      }
+    },
+    {
+      "den": 6,
+      "nazev": "VOLNO NEBO LEHKÁ TURISTIKA",
+      "zamerereni": "Dopřát tělu a mysli regeneraci, načerpat energii v přírodě a užít si aktivní odpočinek. Psychická regenerace je stejně důležitá jako fyzická.",
+      "popis_treninku": {
+        "varianta_1": {
+          "nazev": "Úplné volno",
+          "popis": "Den bez strukturované aktivity. Lehká procházka (20-30 min) pokud cítíš potřebu pohybu. Zaměř se na odpočinek, kvalitní stravu a hydrataci."
+        },
+        "varianta_2": {
+          "nazev": "Lehká turistika",
+          "cas": "60-90 min",
+          "popis": "Vycházka v přírodě mírným terénem. Tempo pohodové, konverzační intenzita (musíš být schopen volně mluvit). Intenzita 50-60% TFmax.",
+          "poznamka": "Ideální s rodinou nebo přáteli pro psychickou regeneraci"
+        },
+        "doplnek": {
+          "cas": "10-15 min",
+          "popis": "Lehká mobilita a protažení večer. Jemné mobilizační cviky pro kyčle a páteř. Dechová cvičení před spaním."
+        }
+      },
+      "metriky": {
+        "tepova_frekvence": {
+          "nazev": "Tepová frekvence (průměr / max.)",
+          "jednotka": "bpm",
+          "poznamka": "Pouze pokud turistika: 90-110 bpm"
+        },
+        "rpe": {
+          "nazev": "RPE (náročnost)",
+          "skala": "1-10",
+          "cilova_hodnota": "1-2"
+        },
+        "hmotnost": {
+          "nazev": "Hmotnost",
+          "jednotka": "kg"
+        },
+        "spanek": {
+          "nazev": "Spánek",
+          "jednotka": "h",
+          "doporuceno": "8-9h - využij volný den k dostatečnému spánku"
+        },
+        "pitny_rezim": {
+          "nazev": "Pitný režim (celkem za den)",
+          "jednotka": "l",
+          "doporuceno": "2.5-3l"
+        },
+        "nalada": {
+          "nazev": "Nálada",
+          "skala": "1-5",
+          "popis": "1 = špatná, 5 = skvělá"
+        }
+      },
+      "splnene_ukoly": [
+        "Odpočinek",
+        "Mobilita (volitelně)",
+        "Kvalitní Strava",
+        "Hydratace"
+      ],
+      "tip_na_dnes": "Úspěšní sportovci umí odpočívat stejně dobře jako trénovat. Dnes je čas na rodinu, přátele nebo koníčky. Nabij baterie!",
+      "poznamky_prostor": true,
+      "hodnoceni_dne": {
+        "skala": "1-10"
+      }
+    },
+    {
+      "den": 7,
+      "nazev": "TEMPOVÝ BĚH + CORE",
+      "zamerereni": "Zlepšení aerobní vytrvalosti, laktátového prahu, mentální odolnosti a schopnosti udržet vysoké tempo po delší dobu.",
+      "popis_treninku": {
+        "rozcviceni": {
+          "cas": "12 min",
+          "popis": "Lehký klus 8 min, dynamická mobilita, 3 progresivní zrychlení 80-100m. Aktivace core (plank 30s, side plank 2x20s)."
+        },
+        "hlavni_cast_tempo_beh": {
+          "cas": "30 min",
+          "popis": "Kontinuální běh v konstantním, mírně nepohodlném tempu. Cíl: 75-85% maximální tepové frekvence (nebo tempo, při kterém ještě můžeš říct krátké věty, ale ne volně konverzovat).",
+          "struktura": "30 minut nepřerušovaný běh",
+          "tempo": "Přibližně tempo o 30-45s/km pomalejší než tvé 5km závodní tempo",
+          "poznamka": "Mentálně náročné - nauč se být v nepohodlí"
+        },
+        "vyklusani": {
+          "cas": "8 min",
+          "popis": "Velmi lehký klus pro zklidnění organismu."
+        },
+        "core_stabilizace": {
+          "cas": "15 min",
+          "cviky": [
+            {
+              "nazev": "Plank s pohybem nohou",
+              "parametry": "3x 45s",
+              "technika": "Střídavé zvedání nohou, stabilní pánev"
+            },
+            {
+              "nazev": "Side Plank s rotací",
+              "parametry": "3x 40s na stranu",
+              "technika": "Rotace trupu dolů pod tělo, pak zpět"
+            },
+            {
+              "nazev": "Leg Raises (zdvih nohou)",
+              "parametry": "3x 15 opakování",
+              "technika": "Nohy natažené, záda na zemi, pomalé spouštění"
+            },
+            {
+              "nazev": "Dead Bug s protahovým pojem",
+              "parametry": "3x 12 opakování",
+              "technika": "Koordinace končetin, aktivní core"
+            },
+            {
+              "nazev": "Hollow Body Hold",
+              "parametry": "3x 20-30s",
+              "technika": "Záda přitlačená k zemi, ramena a nohy nad zemí"
+            }
+          ]
+        },
+        "protazeni": {
+          "cas": "8 min",
+          "popis": "Důkladné statické protažení všech hlavních svalových skupin."
+        }
+      },
+      "metriky": {
+        "tepova_frekvence": {
+          "nazev": "Tepová frekvence (průměr / max.)",
+          "jednotka": "bpm",
+          "poznamka": "Cíl: 145-165 průměr (tempový běh)"
+        },
+        "rpe": {
+          "nazev": "RPE (náročnost)",
+          "skala": "1-10",
+          "cilova_hodnota": "7-8"
+        },
+        "hmotnost": {
+          "nazev": "Hmotnost",
+          "jednotka": "kg"
+        },
+        "spanek": {
+          "nazev": "Spánek",
+          "jednotka": "h",
+          "doporuceno": "7-9h"
+        },
+        "pitny_rezim": {
+          "nazev": "Pitný režim (celkem za den)",
+          "jednotka": "l",
+          "doporuceno": "3-3.5l"
+        },
+        "nalada": {
+          "nazev": "Nálada",
+          "skala": "1-5",
+          "popis": "1 = špatná, 5 = skvělá"
+        }
+      },
+      "splnene_ukoly": [
+        "Rozcvičení",
+        "Tempový Běh",
+        "Core",
+        "Protažení"
+      ],
+      "tip_na_dnes": "Tempový běh učí tvé tělo efektivně pracovat na hranici komfortu. Ve fotbale často musíš běhat v nepohodlném tempu - tohle tě na to připraví!",
+      "poznamky_prostor": true,
+      "hodnoceni_dne": {
+        "skala": "1-10"
+      }
+    },
+    {
+      "den": 8,
+      "nazev": "KRUHOVÝ TRÉNINK",
+      "zamerereni": "Zlepšení síly, lokální svalové vytrvalosti, celkové kondice a metabolické adaptace. Vysoká intenzita s minimálním odpočinkem.",
+      "popis_treninku": {
+        "rozcviceni": {
+          "cas": "10 min",
+          "popis": "Aerobní rozcvičení (jumping jacks, běh na místě), kloubní mobilita, aktivační cviky (glute bridge, plank)."
+        },
+        "hlavni_cast_kruhovy_trenink": {
+          "cas": "30 min",
+          "struktura": "4 kola celkem, 8 cviků x 40s práce / 20s přechod",
+          "odpocinok_mezi_koly": "2 minuty",
+          "cviky": [
+            {
+              "poradi": 1,
+              "nazev": "Burpees",
+              "cas": "40s",
+              "popis": "Plný rozsah, výbušný pohyb"
+            },
+            {
+              "poradi": 2,
+              "nazev": "Dřepy s výskokem (Jump Squats)",
+              "cas": "40s",
+              "popis": "Hluboký dřep, výbušný výskok"
+            },
+            {
+              "poradi": 3,
+              "nazev": "Kliky (Push-ups)",
+              "cas": "40s",
+              "popis": "Tempo kontrolované, plný rozsah"
+            },
+            {
+              "poradi": 4,
+              "nazev": "Mountain Climbers",
+              "cas": "40s",
+              "popis": "Vysoké tempo, střídání kolen"
+            },
+            {
+              "poradi": 5,
+              "nazev": "Výpady s výskokem (Jumping Lunges)",
+              "cas": "40s",
+              "popis": "Střídání nohou ve vzduchu"
+            },
+            {
+              "poradi": 6,
+              "nazev": "Plank Hold",
+              "cas": "40s",
+              "popis": "Statická výdrž, tělo v přímce"
+            },
+            {
+              "poradi": 7,
+              "nazev": "High Knees (běh s vysokými koleny)",
+              "cas": "40s",
+              "popis": "Maximální frekvence, kolena k hrudi"
+            },
+            {
+              "poradi": 8,
+              "nazev": "Russian Twists",
+              "cas": "40s",
+              "popis": "Rychlé rotace, zapojení core"
+            }
+          ]
+        },
+        "vyklusani": {
+          "cas": "5 min",
+          "popis": "Lehké vyklusání nebo chůze pro zklidnění."
+        },
+        "protazeni": {
+          "cas": "10 min",
+          "popis": "Kompletní statické protažení celého těla. Foam rolling pokud dostupný."
+        }
+      },
+      "metriky": {
+        "tepova_frekvence": {
+          "nazev": "Tepová frekvence (průměr / max.)",
+          "jednotka": "bpm",
+          "poznamka": "Vysoká intenzita: 150-175 průměr / max 180+"
+        },
+        "rpe": {
+          "nazev": "RPE (náročnost)",
+          "skala": "1-10",
+          "cilova_hodnota": "8-9"
+        },
+        "hmotnost": {
+          "nazev": "Hmotnost",
+          "jednotka": "kg"
+        },
+        "spanek": {
+          "nazev": "Spánek",
+          "jednotka": "h",
+          "doporuceno": "8-9h (intenzivní trénink vyžaduje dostatečnou regeneraci)"
+        },
+        "pitny_rezim": {
+          "nazev": "Pitný režim (celkem za den)",
+          "jednotka": "l",
+          "doporuceno": "3-3.5l"
+        },
+        "nalada": {
+          "nazev": "Nálada",
+          "skala": "1-5",
+          "popis": "1 = špatná, 5 = skvělá"
+        }
+      },
+      "splnene_ukoly": [
+        "Rozcvičení",
+        "Kruhový Trénink",
+        "Vyklusání",
+        "Protažení"
+      ],
+      "tip_na_dnes": "Kruhový trénink simuluje intenzitu zápasu - vysoký puls, unavené svaly, ale musíš pokračovat. Nauč se zvládat únavu!",
+      "poznamky_prostor": true,
+      "hodnoceni_dne": {
+        "skala": "1-10"
+      }
+    },
+    {
+      "den": 9,
+      "nazev": "FARTLEK / PŘÍRODA",
+      "zamerereni": "Střídání tempa v přirozeném terénu pro zlepšení všestranné kondice, adaptability na měnící se intenzitu a mentální odolnosti.",
+      "popis_treninku": {
+        "rozcviceni": {
+          "cas": "10 min",
+          "popis": "Lehký klus, dynamická mobilita, 2-3 progresivní zrychlení na 80m."
+        },
+        "hlavni_cast_fartlek": {
+          "cas": "35 min",
+          "popis": "Fartlek = 'rychlostní hra' ve švédštině. Běh v přírodě (park, les, kopce) s volným střídáním tempa podle pocitu a terénu.",
+          "struktura": "Nestrukturované střídání rychlosti",
+          "priklad_struktury": [
+            "5 min lehký klus (rozeběhání)",
+            "2 min rychlejší tempo (80% max)",
+            "3 min volný klus",
+            "1 min rychlý běh do kopce (90% max)",
+            "2 min chůze/klus dolů z kopce",
+            "3 min tempo běh (85% max)",
+            "4 min lehký klus",
+            "10 x 30s sprint / 30s klus",
+            "5 min vyklusání"
+          ],
+          "poznamka": "Využij terén - kopce, schody, rovné úseky. Poslouchej své tělo, ale vyzvi se!"
+        },
+        "vyklusani": {
+          "cas": "8 min",
+          "popis": "Lehké vyklusání v rovině."
+        },
+        "protazeni": {
+          "cas": "10 min",
+          "popis": "Protažení v přírodě. Zaměření na dolní končetiny a kyčle. Mobilita kotníků (pokud běžel v nerovném terénu)."
+        }
+      },
+      "metriky": {
+        "tepova_frekvence": {
+          "nazev": "Tepová frekvence (průměr / max.)",
+          "jednotka": "bpm",
+          "poznamka": "Velmi variabilní: 130-160 průměr / 175-185 špičky"
+        },
+        "rpe": {
+          "nazev": "RPE (náročnost)",
+          "skala": "1-10",
+          "cilova_hodnota": "7-8"
+        },
+        "hmotnost": {
+          "nazev": "Hmotnost",
+          "jednotka": "kg"
+        },
+        "spanek": {
+          "nazev": "Spánek",
+          "jednotka": "h",
+          "doporuceno": "7-9h"
+        },
+        "pitny_rezim": {
+          "nazev": "Pitný režim (celkem za den)",
+          "jednotka": "l",
+          "doporuceno": "3-3.5l"
+        },
+        "nalada": {
+          "nazev": "Nálada",
+          "skala": "1-5",
+          "popis": "1 = špatná, 5 = skvělá"
+        }
+      },
+      "splnene_ukoly": [
+        "Rozcvičení",
+        "Fartlek",
+        "Vyklusání",
+        "Protažení"
+      ],
+      "tip_na_dnes": "Fartlek je skvělý pro fotbalisty - zápas není o konstantním tempu, ale o neustálých změnách rychlosti. Trénuj jako hraješ!",
+      "poznamky_prostor": true,
+      "hodnoceni_dne": {
+        "skala": "1-10"
+      }
+    },
+    {
+      "den": 10,
+      "nazev": "REGENERAČNÍ KLUS + PROTAŽENÍ",
+      "zamerereni": "Uzavření 10denního cyklu s lehkým pohybem, důkladným protažením a celkovou regenerací. Příprava na další tréninkový blok.",
+      "popis_treninku": {
+        "regeneracni_klus": {
+          "cas": "25 min",
+          "popis": "Velmi lehký, pohodový běh v nízkém tempu 60-70% TFmax. Zaměření na dechovou koordinaci, uvolněný běh a příjemný pocit.",
+          "poznamka": "Pokud cítíš únavu, zvol chůzi nebo kratší dobu. Není to den na výkon!"
+        },
+        "mobilita_a_protazeni": {
+          "cas": "25 min",
+          "popis": "Obsáhlá mobilizační a protahovací rutina pro celé tělo.",
+          "cviky": [
+            {
+              "oblast": "Dolní končetiny",
+              "cas": "12 min",
+              "cviky_detaily": [
+                "Lýtka - 90s každá strana",
+                "Hamstringy - 90s každá strana",
+                "Quadriceps - 60s každá strana",
+                "Hip Flexors - 90s každá strana",
+                "Gluteální svaly (pigeon pose) - 2 min každá strana",
+                "Adduktory - 90s"
+              ]
+            },
+            {
+              "oblast": "Trup a páteř",
+              "cas": "8 min",
+              "cviky_detaily": [
+                "Cat-Cow - 15 opakování",
+                "Child's Pose - 2 min",
+                "Thorakální rotace - 10x každá strana",
+                "Boční ohyb - 60s každá strana"
+              ]
+            },
+            {
+              "oblast": "Horní část těla",
+              "cas": "5 min",
+              "cviky_detaily": [
+                "Ramenní mobilita - kruhy a protažení",
+                "Prsní svaly - 60s",
+                "Krční páteř - jemné mobilizace"
+              ]
+            }
+          ]
+        },
+        "relaxace_a_zhodnoceni": {
+          "cas": "10 min",
+          "popis": "Dechová cvičení (box breathing: 4s vdech - 4s výdrž - 4s výdech - 4s výdrž). Mentální zhodnocení 10denního bloku.",
+          "zamysleni": [
+            "Co se povedlo?",
+            "Kde můžeš zlepšit?",
+            "Jak ses cítil fyzicky a psychicky?",
+            "Jaký je plán do příštího bloku?"
+          ]
+        }
+      },
+      "metriky": {
+        "tepova_frekvence": {
+          "nazev": "Tepová frekvence (průměr / max.)",
+          "jednotka": "bpm",
+          "poznamka": "Nízká: 110-130 průměr"
+        },
+        "rpe": {
+          "nazev": "RPE (náročnost)",
+          "skala": "1-10",
+          "cilova_hodnota": "2-3"
+        },
+        "hmotnost": {
+          "nazev": "Hmotnost",
+          "jednotka": "kg"
+        },
+        "spanek": {
+          "nazev": "Spánek",
+          "jednotka": "h",
+          "doporuceno": "8-9h"
+        },
+        "pitny_rezim": {
+          "nazev": "Pitný režim (celkem za den)",
+          "jednotka": "l",
+          "doporuceno": "2.5-3l"
+        },
+        "nalada": {
+          "nazev": "Nálada",
+          "skala": "1-5",
+          "popis": "1 = špatná, 5 = skvělá"
+        }
+      },
+      "splnene_ukoly": [
+        "Regenerační Klus",
+        "Mobilita",
+        "Protažení",
+        "Relaxace",
+        "Zhodnocení"
+      ],
+      "tip_na_dnes": "Gratulujeme k dokončení 10denního plánu! Vyhodnoť své pokroky, odpočiň si a připrav se na další výzvy. Konzistence je klíč k úspěchu! ⚽",
+      "poznamky_prostor": true,
+      "hodnoceni_dne": {
+        "skala": "1-10"
+      },
+      "celkove_hodnoceni": {
+        "popis": "Součet všech denních hodnocení",
+        "maximum": 100
+      }
+    }
+  ],
+  "poznamky_k_planu": {
+    "uroven": "Krajský přebor",
+    "vek": "25 let",
+    "frekvence": "10denní cyklus lze opakovat s postupným zvyšováním intenzity",
+    "dulezite_zasady": [
+      "Poslouchej své tělo - pokud cítíš přetížení, přizpůsob intenzitu",
+      "Spánek a výživa jsou stejně důležité jako trénink",
+      "Hydratace je klíčová - pi průběžně během dne",
+      "Progresivní přetěžování - každý cyklus můžeš mírně zvýšit intenzitu nebo objem",
+      "Prevence zranění - nikdy nepřeskakuj rozcvičení a protažení"
+    ],
+    "vyzivove_tipy": [
+      "Sacharidy před tréninkem (1-2h předem) - ovesná kaše, banán, rýže",
+      "Bílkoviny po tréninku (do 60 min) - 20-30g pro optimální regeneraci",
+      "Kvalitní tuky - ořechy, avokádo, olivový olej",
+      "Ovoce a zelenina - antioxidanty pro regeneraci",
+      "Pitný režim - 30-40ml vody na kg tělesné hmotnosti denně"
+    ]
+  }
+}
