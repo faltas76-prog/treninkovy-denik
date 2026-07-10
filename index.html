@@ -2,7 +2,6 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <!-- Přidáno maximum-scale=1 pro lepší chování na mobilu -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Deník - Příprava</title>
     <style>
@@ -27,7 +26,6 @@
         body {
             background-color: var(--bg);
             color: var(--text-main);
-            /* Přidáno spodní odsazení kvůli ovládacím prvkům na mobilu */
             padding: 15px 10px 40px 10px; 
             -webkit-font-smoothing: antialiased;
         }
@@ -113,19 +111,48 @@
             margin-bottom: 20px;
         }
 
-        .training-list li {
+        .task-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
             margin-bottom: 12px;
-            padding-left: 12px;
+            background: #F9FAFB;
+            padding: 10px;
+            border-radius: 8px;
             border-left: 3px solid var(--secondary);
-            font-size: 0.95rem;
-            line-height: 1.4;
         }
 
-        .training-list li strong {
-            display: block;
+        .task-checkbox {
+            width: 22px;
+            height: 22px;
+            margin-top: 2px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .task-label {
+            flex-grow: 1;
+            cursor: pointer;
+            font-size: 0.95rem;
+            line-height: 1.4;
             color: var(--text-main);
+        }
+
+        .task-label strong {
+            display: block;
             font-size: 0.9rem;
             margin-bottom: 2px;
+            color: #000;
+        }
+
+        /* Vizuální efekt pro splněný úkol */
+        .task-checkbox:checked + .task-label {
+            text-decoration: line-through;
+            color: #9CA3AF;
+        }
+        
+        .task-checkbox:checked + .task-label strong {
+            color: #9CA3AF;
         }
 
         .metrics-section {
@@ -165,7 +192,6 @@
             margin-bottom: 6px;
         }
 
-        /* Velikost 16px zabraňuje zoomování na iOS */
         .form-group input {
             width: 100%;
             padding: 12px;
@@ -174,7 +200,7 @@
             border-radius: 8px;
             background: var(--white);
             text-align: center;
-            appearance: none; /* Odstraní nativní stylování na mobilech */
+            appearance: none;
         }
 
         .form-group textarea {
@@ -200,7 +226,7 @@
             background: var(--secondary);
             color: white;
             border: none;
-            padding: 16px; /* Větší padding pro snadný dotyk */
+            padding: 16px; 
             border-radius: 10px;
             font-size: 1.05rem;
             font-weight: bold;
@@ -236,8 +262,7 @@
     </header>
 
     <div class="container" id="app">
-        <!-- Karty se generují automaticky -->
-    </div>
+        </div>
 
     <script>
         const trainingData = [
@@ -343,11 +368,20 @@
 
         function renderApp() {
             trainingData.forEach(dayInfo => {
-                let tasksHtml = dayInfo.tasks.map(task => 
-                    `<li><strong>${task.time} | ${task.title}</strong> ${task.desc}</li>`
-                ).join('');
+                const savedData = JSON.parse(localStorage.getItem(`day_${dayInfo.day}`)) || { rpe: '', sleep: '', water: '', notes: '', checkedTasks: [] };
 
-                const savedData = JSON.parse(localStorage.getItem(`day_${dayInfo.day}`)) || { rpe: '', sleep: '', water: '', notes: '' };
+                let tasksHtml = dayInfo.tasks.map((task, index) => {
+                    // Kontrola, zda byl úkol už dříve uložen jako splněný
+                    const isChecked = savedData.checkedTasks && savedData.checkedTasks.includes(index) ? 'checked' : '';
+                    return `
+                        <li class="task-item">
+                            <input type="checkbox" id="task_${dayInfo.day}_${index}" ${isChecked} class="task-checkbox">
+                            <label for="task_${dayInfo.day}_${index}" class="task-label">
+                                <strong>${task.time} | ${task.title}</strong> ${task.desc}
+                            </label>
+                        </li>
+                    `;
+                ).join('');
 
                 const card = document.createElement('div');
                 card.className = 'card';
@@ -396,11 +430,23 @@
         }
 
         function saveData(dayNum) {
+            // Zjištění stavu zaškrtávacích políček pro daný den
+            const dayInfo = trainingData.find(d => d.day === dayNum);
+            const checkedTasks = [];
+            
+            dayInfo.tasks.forEach((task, index) => {
+                const checkbox = document.getElementById(`task_${dayNum}_${index}`);
+                if (checkbox && checkbox.checked) {
+                    checkedTasks.push(index);
+                }
+            });
+
             const dayData = {
                 rpe: document.getElementById(`rpe_${dayNum}`).value,
                 sleep: document.getElementById(`sleep_${dayNum}`).value,
                 water: document.getElementById(`water_${dayNum}`).value,
-                notes: document.getElementById(`notes_${dayNum}`).value
+                notes: document.getElementById(`notes_${dayNum}`).value,
+                checkedTasks: checkedTasks // Uložení pole indexů splněných úkolů
             };
 
             localStorage.setItem(`day_${dayNum}`, JSON.stringify(dayData));
