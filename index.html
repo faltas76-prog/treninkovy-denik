@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1E3A8A">
+    <link rel="apple-touch-icon" href="icon-192.png">
     <title>Deník - Příprava</title>
     <style>
         /* Světlý režim (výchozí) */
@@ -609,6 +612,15 @@
 
         // Start aplikace
         renderApp();
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('Offline režim aktivován!', reg))
+                    .catch(err => console.error('Chyba offline režimu:', err));
+            });
+        }
     </script>
 </body>
 </html>
