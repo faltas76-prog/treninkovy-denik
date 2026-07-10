@@ -145,7 +145,6 @@
             color: #000;
         }
 
-        /* Vizuální efekt pro splněný úkol */
         .task-checkbox:checked + .task-label {
             text-decoration: line-through;
             color: #9CA3AF;
@@ -262,7 +261,8 @@
     </header>
 
     <div class="container" id="app">
-        </div>
+        <!-- Karty se generují automaticky -->
+    </div>
 
     <script>
         const trainingData = [
@@ -371,7 +371,6 @@
                 const savedData = JSON.parse(localStorage.getItem(`day_${dayInfo.day}`)) || { rpe: '', sleep: '', water: '', notes: '', checkedTasks: [] };
 
                 let tasksHtml = dayInfo.tasks.map((task, index) => {
-                    // Kontrola, zda byl úkol už dříve uložen jako splněný
                     const isChecked = savedData.checkedTasks && savedData.checkedTasks.includes(index) ? 'checked' : '';
                     return `
                         <li class="task-item">
@@ -381,7 +380,7 @@
                             </label>
                         </li>
                     `;
-                ).join('');
+                }).join(''); // OPRAVA: Zde chyběla složená závorka "}"
 
                 const card = document.createElement('div');
                 card.className = 'card';
@@ -430,7 +429,6 @@
         }
 
         function saveData(dayNum) {
-            // Zjištění stavu zaškrtávacích políček pro daný den
             const dayInfo = trainingData.find(d => d.day === dayNum);
             const checkedTasks = [];
             
@@ -446,7 +444,7 @@
                 sleep: document.getElementById(`sleep_${dayNum}`).value,
                 water: document.getElementById(`water_${dayNum}`).value,
                 notes: document.getElementById(`notes_${dayNum}`).value,
-                checkedTasks: checkedTasks // Uložení pole indexů splněných úkolů
+                checkedTasks: checkedTasks
             };
 
             localStorage.setItem(`day_${dayNum}`, JSON.stringify(dayData));
