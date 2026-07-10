@@ -2,16 +2,17 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tréninkový Deník - Příprava</title>
+    <!-- Přidáno maximum-scale=1 pro lepší chování na mobilu -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Deník - Příprava</title>
     <style>
         :root {
-            --primary: #1E3A8A; /* Tmavě modrá z předlohy */
+            --primary: #1E3A8A;
             --secondary: #3B82F6;
             --bg: #F3F4F6;
             --white: #FFFFFF;
             --text-main: #1F2937;
-            --text-light: #6B7280;
+            --text-light: #4B5563;
             --border: #E5E7EB;
             --success: #10B981;
         }
@@ -20,150 +21,178 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
         body {
             background-color: var(--bg);
             color: var(--text-main);
-            padding: 20px;
+            /* Přidáno spodní odsazení kvůli ovládacím prvkům na mobilu */
+            padding: 15px 10px 40px 10px; 
+            -webkit-font-smoothing: antialiased;
         }
 
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         h1 {
             color: var(--primary);
             text-transform: uppercase;
-            font-size: 2.2rem;
-            margin-bottom: 10px;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
         }
 
         h2 {
-            font-size: 1.2rem;
+            font-size: 0.95rem;
             color: var(--text-light);
             font-weight: 500;
         }
 
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
 
         .card {
             background: var(--white);
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 16px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.06);
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            border: 1px solid var(--border);
         }
 
         .card-header {
             background: var(--primary);
             color: var(--white);
-            padding: 15px 20px;
+            padding: 16px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .card-header h3 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+            margin: 0;
         }
 
         .card-header .day-badge {
             background: var(--white);
             color: var(--primary);
-            padding: 5px 12px;
+            padding: 4px 10px;
             border-radius: 20px;
             font-weight: bold;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
         }
 
         .card-body {
-            padding: 20px;
-            flex-grow: 1;
+            padding: 16px;
         }
 
         .focus-title {
             color: var(--primary);
-            font-weight: 800;
+            font-weight: 700;
             margin-bottom: 15px;
             text-transform: uppercase;
-            font-size: 1.1rem;
-            border-bottom: 2px solid var(--primary);
-            padding-bottom: 5px;
-            display: inline-block;
+            font-size: 1rem;
+            display: block;
+            border-bottom: 2px solid #E0E7FF;
+            padding-bottom: 8px;
         }
 
         .training-list {
             list-style: none;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .training-list li {
             margin-bottom: 12px;
-            padding-left: 15px;
+            padding-left: 12px;
             border-left: 3px solid var(--secondary);
             font-size: 0.95rem;
+            line-height: 1.4;
         }
 
         .training-list li strong {
             display: block;
             color: var(--text-main);
+            font-size: 0.9rem;
+            margin-bottom: 2px;
         }
 
         .metrics-section {
-            background: #F9FAFB;
-            padding: 15px;
-            border-radius: 8px;
+            background: #F8FAFC;
+            padding: 16px;
+            border-radius: 12px;
             border: 1px solid var(--border);
         }
 
         .metrics-title {
-            font-size: 1rem;
-            font-weight: bold;
-            margin-bottom: 15px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 16px;
             color: var(--text-main);
             text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 12px;
         }
 
         .form-group {
-            margin-bottom: 12px;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            flex-direction: column;
+            margin-bottom: 12px;
         }
 
         .form-group label {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 600;
             color: var(--text-light);
+            margin-bottom: 6px;
         }
 
+        /* Velikost 16px zabraňuje zoomování na iOS */
         .form-group input {
-            width: 80px;
-            padding: 6px;
-            border: 1px solid var(--border);
-            border-radius: 4px;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px; 
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            background: var(--white);
             text-align: center;
+            appearance: none; /* Odstraní nativní stylování na mobilech */
         }
 
         .form-group textarea {
             width: 100%;
-            padding: 10px;
-            border: 1px solid var(--border);
-            border-radius: 4px;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
             resize: vertical;
-            min-height: 60px;
-            margin-top: 5px;
+            min-height: 80px;
+            background: var(--white);
+            appearance: none;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
         }
 
         .save-btn {
@@ -171,30 +200,31 @@
             background: var(--secondary);
             color: white;
             border: none;
-            padding: 10px;
-            border-radius: 6px;
+            padding: 16px; /* Větší padding pro snadný dotyk */
+            border-radius: 10px;
+            font-size: 1.05rem;
             font-weight: bold;
             cursor: pointer;
             transition: background 0.2s;
             margin-top: 10px;
+            box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+            -webkit-tap-highlight-color: transparent;
         }
 
-        .save-btn:hover {
+        .save-btn:active {
             background: var(--primary);
+            transform: scale(0.98);
         }
 
         .saved-msg {
             color: var(--success);
-            font-size: 0.8rem;
+            font-size: 0.9rem;
+            font-weight: 600;
             text-align: center;
-            margin-top: 5px;
-            min-height: 15px;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                grid-template-columns: 1fr;
-            }
+            margin-top: 10px;
+            min-height: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
     </style>
 </head>
@@ -202,14 +232,14 @@
 
     <header>
         <h1>Tréninkový Deník</h1>
-        <h2>Příprava – Udržení kondice | 10 Denní Plán</h2>
+        <h2>Příprava – Udržení kondice</h2>
     </header>
 
     <div class="container" id="app">
-        </div>
+        <!-- Karty se generují automaticky -->
+    </div>
 
     <script>
-        // Data pro 10denní tréninkový plán vycházející z fotbalové přípravy
         const trainingData = [
             {
                 day: 1,
@@ -217,18 +247,18 @@
                 tasks: [
                     { time: "10 min", title: "Rozcvičení", desc: "Lehký klus, dynamické protažení, mobilita kloubů." },
                     { time: "30 min", title: "Hlavní část", desc: "Pohodové tempo (65-70% TFmax). Dýchat nosem." },
-                    { time: "15 min", title: "Core", "desc": "Plank, dead bug, bird dog, zkracovačky." },
+                    { time: "15 min", title: "Core", desc: "Plank, dead bug, bird dog, zkracovačky." },
                     { time: "10 min", title: "Protažení", desc: "Statické protažení celého těla." }
                 ]
             },
             {
                 day: 2,
-                focus: "Silový trénink s vlastní vahou",
+                focus: "Silový trénink (vlastní váha)",
                 tasks: [
-                    { time: "10 min", title: "Rozcvičení", desc: "Švihadlo, dynamický strečink, aktivace středu těla." },
-                    { time: "40 min", title: "Hlavní část", desc: "Kruhový trénink (kliky, dřepy s výskokem, výpady, hip thrust). 4 kola." },
+                    { time: "10 min", title: "Rozcvičení", desc: "Švihadlo, dynamický strečink, aktivace středu." },
+                    { time: "40 min", title: "Hlavní část", desc: "Kruhový trénink (kliky, dřepy, výpady, hip thrust). 4 kola." },
                     { time: "10 min", title: "Core", desc: "Plank variace, mountain climbers." },
-                    { time: "10 min", title: "Protažení", desc: "Statické protažení zaměřené na nohy." }
+                    { time: "10 min", title: "Protažení", desc: "Statické protažení na nohy." }
                 ]
             },
             {
@@ -238,15 +268,15 @@
                     { time: "15 min", title: "Rozcvičení", desc: "Běžecká abeceda, rovinky na zahřátí." },
                     { time: "35 min", title: "Hlavní část", desc: "10x 200m sprint (80-85% max), pauza meziklusem 200m." },
                     { time: "10 min", title: "Výklus", desc: "Lehký klus + hluboké dýchání." },
-                    { time: "10 min", title: "Protažení", desc: "Protažení se zaměřením na lýtka a hamstringy." }
+                    { time: "10 min", title: "Protažení", desc: "Zaměření na lýtka a hamstringy." }
                 ]
             },
             {
                 day: 4,
                 focus: "Aktivní regenerace",
                 tasks: [
-                    { time: "45-60 min", title: "Aktivní pohyb", desc: "Plavání, jízda na kole nebo svižná chůze (intenzita 50-60%)." },
-                    { time: "15 min", title: "Mobilita", desc: "Práce s pěnovým válcem (foam rolling), protažení ztuhlých partií." },
+                    { time: "45-60 min", title: "Aktivní pohyb", desc: "Plavání, jízda na kole nebo chůze (intenzita 50-60%)." },
+                    { time: "15 min", title: "Mobilita", desc: "Foam rolling, protažení ztuhlých partií." },
                     { time: "10 min", title: "Relaxace", desc: "Dýchací cvičení, uvolnění." }
                 ]
             },
@@ -255,9 +285,9 @@
                 focus: "Fotbalová obratnost + Sprinty",
                 tasks: [
                     { time: "15 min", title: "Rozcvičení", desc: "Lehký klus, koordinace s míčem." },
-                    { time: "30 min", title: "Hlavní část", desc: "Dribling mezi kužely, rychlé změny směru. Sprinty 5x20m plný plyn." },
+                    { time: "30 min", title: "Hlavní část", desc: "Dribling mezi kužely. Sprinty 5x20m naplno." },
                     { time: "10 min", title: "Střelba", desc: "Střelba na bránu z hranice vápna." },
-                    { time: "15 min", title: "Výklus a Protažení", desc: "Lehký klus, statický strečink." }
+                    { time: "15 min", title: "Výklus/Protažení", desc: "Lehký klus, statický strečink." }
                 ]
             },
             {
@@ -274,7 +304,7 @@
                 focus: "Tempový běh + Core",
                 tasks: [
                     { time: "15 min", title: "Rozcvičení", desc: "Lehký klus, dynamický strečink." },
-                    { time: "30 min", title: "Tempový běh", desc: "Udržuj tempo na 75-80% TFmax. Rovnoměrné tempo." },
+                    { time: "30 min", title: "Tempový běh", desc: "Udržuj tempo na 75-80% TFmax." },
                     { time: "15 min", title: "Core", desc: "Russian twist, leg raises, boční plank." },
                     { time: "10 min", title: "Protažení", desc: "Statický strečink celého těla." }
                 ]
@@ -284,8 +314,8 @@
                 focus: "Kruhový trénink",
                 tasks: [
                     { time: "10 min", title: "Rozcvičení", desc: "Švihadlo, dynamická aktivace." },
-                    { time: "40 min", title: "Kruháč", desc: "8 cviků, 40s práce / 20s pauza. 4 kola (pauza mezi koly 90s). Burpees, shyby, kliky..." },
-                    { time: "10 min", title: "Protažení", desc: "Statické protažení, zaměření na vršek těla." }
+                    { time: "40 min", title: "Kruháč", desc: "8 cviků, 40s práce / 20s pauza. 4 kola." },
+                    { time: "10 min", title: "Protažení", desc: "Statické protažení na vršek těla." }
                 ]
             },
             {
@@ -293,7 +323,7 @@
                 focus: "Fartlek / Hra s rychlostí",
                 tasks: [
                     { time: "15 min", title: "Rozcvičení", desc: "Lehký klus a dynamika." },
-                    { time: "45 min", title: "Fartlek", desc: "Běh v terénu. Střídání tempa podle pocitu (např. sprint do kopce, volně po rovince)." },
+                    { time: "45 min", title: "Fartlek", desc: "Běh v terénu. Střídání tempa podle pocitu." },
                     { time: "10 min", title: "Výklus", desc: "Velmi volný klus." },
                     { time: "10 min", title: "Protažení", desc: "Důkladný statický strečink." }
                 ]
@@ -302,7 +332,7 @@
                 day: 10,
                 focus: "Regenerační klus + Protažení",
                 tasks: [
-                    { time: "30 min", title: "Klus", desc: "Pohodové tempo, uvolnění svalů, koncentrace na dech." },
+                    { time: "30 min", title: "Klus", desc: "Pohodové tempo, uvolnění svalů." },
                     { time: "15 min", title: "Mobilita", desc: "Komplexní protažení celého těla." },
                     { time: "15 min", title: "Relaxace", desc: "Mentální uvolnění, zhodnocení bloku." }
                 ]
@@ -311,51 +341,53 @@
 
         const appContainer = document.getElementById('app');
 
-        // Funkce pro vykreslení karet
         function renderApp() {
             trainingData.forEach(dayInfo => {
-                // Vytvoření HTML pro úkoly
                 let tasksHtml = dayInfo.tasks.map(task => 
-                    `<li><strong>${task.time} - ${task.title}</strong> ${task.desc}</li>`
+                    `<li><strong>${task.time} | ${task.title}</strong> ${task.desc}</li>`
                 ).join('');
 
-                // Získání uložených dat (pokud existují)
                 const savedData = JSON.parse(localStorage.getItem(`day_${dayInfo.day}`)) || { rpe: '', sleep: '', water: '', notes: '' };
 
-                // Sestavení HTML karty
                 const card = document.createElement('div');
                 card.className = 'card';
                 card.innerHTML = `
                     <div class="card-header">
                         <h3>DEN ${dayInfo.day}</h3>
-                        <span class="day-badge">10 denní plán</span>
+                        <span class="day-badge">10 dnů</span>
                     </div>
                     <div class="card-body">
-                        <span class="focus-title">Zaměření: ${dayInfo.focus}</span>
+                        <span class="focus-title">${dayInfo.focus}</span>
                         <ul class="training-list">
                             ${tasksHtml}
                         </ul>
 
                         <div class="metrics-section">
-                            <div class="metrics-title">Dnešní metriky</div>
+                            <div class="metrics-title">Hodnocení dne</div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Náročnost (1-10)</label>
+                                    <input type="number" inputmode="numeric" min="1" max="10" id="rpe_${dayInfo.day}" value="${savedData.rpe}" placeholder="Např. 7">
+                                </div>
+                                <div class="form-group">
+                                    <label>Spánek (h)</label>
+                                    <input type="number" inputmode="decimal" step="0.5" id="sleep_${dayInfo.day}" value="${savedData.sleep}" placeholder="Např. 8">
+                                </div>
+                            </div>
+
                             <div class="form-group">
-                                <label title="Rate of Perceived Exertion (1=lehké, 10=maximum)">Náročnost (RPE 1-10):</label>
-                                <input type="number" min="1" max="10" id="rpe_${dayInfo.day}" value="${savedData.rpe}">
+                                <label>Vypitá voda (litry)</label>
+                                <input type="number" inputmode="decimal" step="0.5" id="water_${dayInfo.day}" value="${savedData.water}" placeholder="Např. 3.5">
                             </div>
+
                             <div class="form-group">
-                                <label>Spánek (hodiny):</label>
-                                <input type="number" step="0.5" id="sleep_${dayInfo.day}" value="${savedData.sleep}">
+                                <label>Moje poznámky k tréninku</label>
+                                <textarea id="notes_${dayInfo.day}" placeholder="Jak se dnes běhalo/cvičilo?">${savedData.notes}</textarea>
                             </div>
-                            <div class="form-group">
-                                <label>Voda (litry):</label>
-                                <input type="number" step="0.5" id="water_${dayInfo.day}" value="${savedData.water}">
-                            </div>
-                            <div class="form-group" style="flex-direction: column; align-items: flex-start;">
-                                <label>Poznámky z tréninku:</label>
-                                <textarea id="notes_${dayInfo.day}" placeholder="Jak ses dnes cítil?">${savedData.notes}</textarea>
-                            </div>
-                            <button class="save-btn" onclick="saveData(${dayInfo.day})">Uložit den ${dayInfo.day}</button>
-                            <div class="saved-msg" id="msg_${dayInfo.day}"></div>
+
+                            <button class="save-btn" onclick="saveData(${dayInfo.day})">Uložit výsledky</button>
+                            <div class="saved-msg" id="msg_${dayInfo.day}">Úspěšně uloženo!</div>
                         </div>
                     </div>
                 `;
@@ -363,31 +395,23 @@
             });
         }
 
-        // Funkce pro uložení dat do Local Storage
         function saveData(dayNum) {
-            const rpeVal = document.getElementById(`rpe_${dayNum}`).value;
-            const sleepVal = document.getElementById(`sleep_${dayNum}`).value;
-            const waterVal = document.getElementById(`water_${dayNum}`).value;
-            const notesVal = document.getElementById(`notes_${dayNum}`).value;
-
             const dayData = {
-                rpe: rpeVal,
-                sleep: sleepVal,
-                water: waterVal,
-                notes: notesVal
+                rpe: document.getElementById(`rpe_${dayNum}`).value,
+                sleep: document.getElementById(`sleep_${dayNum}`).value,
+                water: document.getElementById(`water_${dayNum}`).value,
+                notes: document.getElementById(`notes_${dayNum}`).value
             };
 
             localStorage.setItem(`day_${dayNum}`, JSON.stringify(dayData));
 
-            // Zobrazení potvrzovací zprávy
             const msgEl = document.getElementById(`msg_${dayNum}`);
-            msgEl.textContent = "Úspěšně uloženo!";
+            msgEl.style.opacity = '1';
             setTimeout(() => {
-                msgEl.textContent = "";
-            }, 3000);
+                msgEl.style.opacity = '0';
+            }, 2500);
         }
 
-        // Spuštění aplikace po načtení
         renderApp();
     </script>
 </body>
